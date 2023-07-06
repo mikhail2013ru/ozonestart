@@ -13,6 +13,6 @@ export default function getData() {
 		})
 		.catch((err) => {
 			console.warn(err);
-			goodsWrapper.innerHTML = '<div style="color:red; font-size:30px">Запустите сервер для загрузки товаров.</div>';
+			goodsWrapper.innerHTML = '<div style="color:red; font-size:30px">Запустите сервер для загрузки товаров...</div>';
 		});
 }
