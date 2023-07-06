@@ -3,7 +3,8 @@ export default function renderCards(data) {
 	data.goods.forEach((good) => {
 		const card = document.createElement('div');
 		card.className = '<div class="col-12 col-md-6 col-lg-4 col-xl-3">';
-		card.innerHTML = `      
+    card.style.marginBottom = '25px';
+		card.innerHTML = `   
 				<div class="card" data-category="${good.category}">
 					${good.sale ? '<div class="card-sale">🔥Hot Sale🔥</div>' : ''}          
           <div class="card-img-wrapper">
